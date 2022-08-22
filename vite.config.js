@@ -1,5 +1,6 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
+import { ghPages } from "vite-plugin-gh-pages";
 
 const root = resolve(__dirname, "src");
 const outDir = resolve(__dirname, "dist");
@@ -7,6 +8,7 @@ const outDir = resolve(__dirname, "dist");
 export default defineConfig({
 
     base: "/pokedex-vite/",
+    plugins: [ghPages()],
     root: root,
     build: {
 
