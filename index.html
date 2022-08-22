@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pokedex-vite/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+    
+    
+    <script type="module" crossorigin src="/pokedex-vite/assets/index.fec8497c.js"></script>
+    <link rel="stylesheet" href="/pokedex-vite/assets/index.9bde41c8.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Pokedex</a>
+            </li>
+            <a class="navbar-brand" href="#">
+              <img src="/pokedex-vite/assets/pokemon.svg" alt="" width="30" height="24">
+            </a>
+          </ul> 
+          <form id="formulario2" class="d-flex" role="search">
+            <input id="inputPesquisar2" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="btnPesquisar2" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="inicio" class="row-cols-1 row-cols-md-2 flex-wrap align-items-center">
+      <img id="fotoPokemon" class="img" src="/pokedex-vite/assets/bulbasaur-seeklogo.com.svg">
+      <div class="card-body">
+        <h5 class="card-title">Faça uma busca na pokedex!</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nobis officiis dolores, consectetur temporibus autem.</p>
+        <form id="formulario" class="d-flex" role="search">
+          <input id="inputPesquisar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" autocomplete="Off">
+          <button id="btnPesquisar" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <div id="pokemonPesquisado" class="align-items-center justify-content-center py-xl-5">
+      <div id="cardPokemon" class="card md-3 CardPokemon m-auto text-lg-center">
+        <p id="idPokemon"></p>
+        <p id="nomePokemon"></p>
+        <img id="fotoPokemonPesquisado" class="img" src="">
+        <p id="tipoPokemon"></p>
+        <p id="descricaoPokemon"></p>
+      </div>
+    </div>
+  </body>
+</html>
