@@ -29,7 +29,7 @@ async function obterPokemon(nome : string){
         let idPokemon = pokemon["id"];
         let nomePokemon = pokemon["name"];
         let tipoPokemon = pokemon["types"][0]["type"]["name"];
-        let fotoPokemon = pokemon["sprites"]["front_default"];
+        let fotoPokemon = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
 
         let infosAdicionaisPokemon = pokemon["species"]["url"];
 
